@@ -23,5 +23,8 @@ end
 function aliyun_sdk:exec(domain, version, parameter)
     return self.module:exec(domain, version, parameter)
 end
+function aliyun_sdk:self()
+    return self.module:self()
+end
 
 return aliyun_sdk

@@ -82,7 +82,8 @@ void module::aliyun_sdk::regist(sol::state* lua)
     lua->new_usertype<module::aliyun_sdk>("fw_aliyunsdk",
         "new", sol::constructors<module::aliyun_sdk()>(),
         "set", &module::aliyun_sdk::set,
-        "exec", &module::aliyun_sdk::exec
+        "exec", &module::aliyun_sdk::exec,
+        "self", &module::aliyun_sdk::self
     );
 }
 

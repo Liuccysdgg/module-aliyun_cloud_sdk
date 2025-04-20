@@ -8,7 +8,7 @@ aliyun_sdk.__index = aliyun_sdk
 function aliyun_sdk.new(db)
     local instance = setmetatable({}, aliyun_sdk)
     if db == nil then
-        instance.module = fw_aliyun_sdk.new()
+        instance.module = fw_aliyunsdk.new()
     else
         instance.module = db    
     end
